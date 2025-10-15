@@ -1,0 +1,8 @@
+Flask
+gunicorn
+requests
+PyMuPDF
+edge-tts
+flask-cors
+google-generativeai==0.8.5
+python-dotenv
