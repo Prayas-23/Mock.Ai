@@ -88,68 +88,67 @@ git clone https://github.com/yourusername/mock-ai.git
 cd mock-ai
 2. Backend Setup (Flask/Python)
 bash
-# Navigate to backend directory
+ --Navigate to backend directory
 cd backend
 
-# Create virtual environment
+--Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
-# On Windows:
+ --Activate virtual environment
+--On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+--On macOS/Linux:
 source venv/bin/activate
 
-# Install Python dependencies
+--Install Python dependencies
 pip install -r requirements.txt
 
-# Set up environment variables
+--Set up environment variables
 cp .env.example .env
-# Edit .env with your configuration:
-# - MongoDB connection string
-# - Google Gemini API key
-# - JWT secret key
-# - Other API keys
+---Edit .env with your configuration:
+ - MongoDB connection string
+ - Google Gemini API key
+ - JWT secret key
+ - Other API keys
 
-# Start Flask server
+--Start Flask server
 python app.py
 The Flask backend will run on http://localhost:5000
 
 3. Frontend Setup (React)
 bash
-# Navigate to frontend directory (from project root)
+--Navigate to frontend directory (from project root)
 cd frontend
 
-# Install Node.js dependencies
+--Install Node.js dependencies
 npm install
-# or
+   or
 yarn install
 
-# Create environment file
+--Create environment file
 cp .env.example .env.local
-# Edit .env.local with your configuration:
-# - Backend API URL
-# - Any frontend-specific environment variables
-
-# Start React development server
+--Edit .env.local with your configuration:
+  - Backend API URL
+  - Any frontend-specific environment variables
+--Start React development server
 npm start
-# or
+ or
 yarn start
 The React frontend will run on http://localhost:3000
 
 4. Database Setup (MongoDB)
 bash
-# Start MongoDB service
-# On Windows (if installed as service):
+--Start MongoDB service
+--On Windows (if installed as service):
 net start MongoDB
 
-# On macOS:
+--On macOS:
 brew services start mongodb/brew/mongodb-community
 
-# On Linux:
+--On Linux:
 sudo systemctl start mongod
 
-# Create database and collections (optional - app will create automatically)
+--Create database and collections (optional - app will create automatically)
 mongosh
 use mockai
 📱 Usage
